@@ -1,0 +1,7 @@
+@use './_variable' as *;
+
+html {
+    font-size: 100%;
+    color: $sample-color1;
+    background-color: $sample-color2;
+}
