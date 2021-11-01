@@ -2,6 +2,15 @@
 
 html {
     font-size: 100%;
-    color: $sample-color1;
-    background-color: $sample-color2;
+}
+body {
+    color: $text-black;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    color: $text-black;
+    text-decoration: none;
+}
+li {
+    list-style: none;
 }

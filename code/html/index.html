@@ -10,18 +10,24 @@
         <!-- CSS -->
         <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css">
         <link rel="stylesheet" href="../public/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <header>
-            <img class="c-logo" src="../img/logo.png" alt="ロゴ">
-            <input type="text" value="" name="s" id="search-text" class=input>
+        <header class="l-header">
+            <div class=""><span>Menu</span><span></span></div>
+            <img class="l-logo" src="../img/logo.png" alt="ロゴ">
+            <input type="text" value="" name="" id="search-text" class=input>
             <button type="submit" name="" class="c-btn" value="">検索</button>
-            <!-- スマートファーストのため一時的にコメントアウト
-            <img class="pc" src="../img/mainvisual-pc@2x.jpg" alt="PC用の画像">
-            -->
-            <img class="sp" src="../img/mainvisual-sp@2x.jpg" alt="スマートフォン用の画像">
-            <p>ダミーサイト</p>
+            <div class="l-mainvisual__wrapper">
+                <!-- スマートファーストのため一時的にコメントアウト
+                <img class="pc" src="../img/mainvisual-pc@2x.jpg" alt="PC用の画像">
+                -->
+                <img class="l-sp" src="../img/mainvisual-sp@2x.jpg" alt="スマートフォン用の画像">
+                <p>ダミーサイト</p>
+            </div>
         </header>
 
         <div class="container">

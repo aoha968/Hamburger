@@ -1,20 +1,15 @@
-@use './foundation/_variable' as *;
-@use './foundation/_reset' as *;
-
 // ==========================================================================
 // Foundation
 // ==========================================================================
-
-//@import "foundation/_reset";
-//@import "foundation/_base";
+@use './foundation/_variable' as *;
+@use './foundation/_reset' as *;
 
 // ==========================================================================
 // Layout
 // ==========================================================================
 
-//@import "layout/_footer";
-//@import "layout/_header";
-//@import "layout/_main";
+@use './layout/_l-header' as *;
+@use './layout/_l-footer' as *;
 //@import "layout/_sidebar";
 
 // ==========================================================================

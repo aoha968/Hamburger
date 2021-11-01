@@ -1,5 +1,56 @@
+@charset "UTF-8";
 html {
   font-size: 100%;
-  color: yellow;
-  background-color: aqua;
+}
+
+body {
+  color: #707070;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: #707070;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+@media (max-width: 750px) {
+  .l-header {
+    background-color: #FFF7EF;
+    padding-bottom: 0;
+    /* 検索フォーム + ボタン */
+    /* Compornentになる想定 */
+  }
+  .l-header span {
+    display: block;
+    text-align: right;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 20px 20px 0px 0px;
+    margin: 0;
+    background-color: aqua;
+  }
+  .l-header .l-logo {
+    display: block;
+    margin: auto;
+  }
+  .l-header .l-mainvisual__wrapper {
+    position: relative;
+  }
+  .l-header .l-mainvisual__wrapper .l-sp {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  .l-header .l-mainvisual__wrapper p {
+    position: absolute;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    top: 40%;
+    left: 5%;
+  }
 }
