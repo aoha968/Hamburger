@@ -1,0 +1,23 @@
+@use '..//foundation/_variable' as *;
+
+@media (max-width:750px) {
+    .l-footer {
+        background-image: url(../../img/footer.png);
+        height: 200px;
+        li {
+            color: $text-white;
+            font-family: 'M PLUS 1p', sans-serif;
+            font-size: 1.6rem;
+            padding-top: 50px;
+            text-align: center;
+        }
+        address {
+            color: $text-white;
+            font-family: 'M PLUS 1p', sans-serif;
+            font-style: normal;
+            font-size: 1.2rem;
+            text-align: center;
+            padding-top: 30px;
+        }
+    }
+}
