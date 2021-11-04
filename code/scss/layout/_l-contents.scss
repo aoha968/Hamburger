@@ -1,12 +1,10 @@
 @use '../foundation/_variable' as *;
 
-.l-contents {
-    display: block;
-    width: 100%;
-    height: auto;
-    padding: 1.5rem 1.5rem 2rem;
-}
-
-.branch-menu {
-    
+@media (max-width:750px) {
+    .l-contents {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 1.5rem 1.5rem 2rem;
+    }
 }
