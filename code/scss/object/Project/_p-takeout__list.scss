@@ -1,9 +1,12 @@
 @use '../../foundation/_variable' as *;
 
 @media (max-width:750px) {
-    .p-takeout__wrapper {
-        position: absolute;
-        width: 100%;
-        bottom: 1.3rem;
+    .p-takeout__list {
+        width: 90%;
+        margin: 0 auto 0;
+        padding-right: 2rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+        background-color: rgba(255, 255, 255, 0.7);
     }
 }

@@ -11,7 +11,7 @@
 @use './layout/_l-header' as *;
 @use './layout/_l-footer' as *;
 @use './layout/_l-contents' as *;
-//@import "layout/_sidebar";
+@use './layout/_l-sidebar' as *;
 
 // ==========================================================================
 // Object
