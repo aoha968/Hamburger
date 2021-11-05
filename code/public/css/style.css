@@ -93,17 +93,34 @@ h1, h2, h3, h4, P {
 }
 @media (max-width: 750px) {
   .l-sidebar {
-    background-color: aqua;
+    display: block;
+    /* 検証用（あとでnoneに戻す） */
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100vh;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    /* IE、Edgeでスクロールバーを消す */
+    -ms-overflow-style: none;
+    /* Firefoxでスクロールバーを消す */
+    background-color: #f2ede9;
   }
-}
-@media (max-width: 750px) {
-  .p-takeout__list {
-    width: 90%;
-    margin: 0 auto 0;
-    padding-right: 2rem;
-    padding-bottom: 0.5rem;
-    padding-left: 1rem;
-    background-color: rgba(255, 255, 255, 0.7);
+  .l-sidebar::-webkit-scrollbar {
+    display: none;
+    /* Chrome、Safariでスクロールバーを消す */
+  }
+  .l-sidebar h2 {
+    display: none;
+  }
+  .l-sidebar h3 {
+    padding: 45px 40px 0px 35px;
+  }
+  .l-sidebar li {
+    list-style: none;
+    line-height: 20px;
+    padding: 10px 0px 20px 65px;
   }
 }
 .p-card {

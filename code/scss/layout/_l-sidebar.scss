@@ -2,6 +2,29 @@
 
 @media (max-width:750px) {
     .l-sidebar {
-        background-color: aqua;
+        display: block;     /* 検証用（あとでnoneに戻す） */
+        position:absolute;
+        top:0;
+        right:0;
+        width:45%;
+        height: 100vh;
+        overflow: scroll;
+        -ms-overflow-style: none;   /* IE、Edgeでスクロールバーを消す */
+        -ms-overflow-style: none;   /* Firefoxでスクロールバーを消す */
+        background-color: #f2ede9;
+        &::-webkit-scrollbar {
+            display: none;      /* Chrome、Safariでスクロールバーを消す */
+        }
+        h2 {
+            display: none;
+        }
+        h3 {
+            padding: 45px 40px 0px 35px;
+        }
+        li{
+            list-style: none;
+            line-height: 20px;
+            padding:10px 0px 20px 65px;
+        }
     }
 }
