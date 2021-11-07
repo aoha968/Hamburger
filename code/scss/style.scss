@@ -12,6 +12,7 @@
 @use './layout/_l-footer' as *;
 @use './layout/_l-contents' as *;
 @use './layout/_l-sidebar' as *;
+@use './layout/_l-mainvisual' as *;
 
 // ==========================================================================
 // Object
@@ -21,7 +22,7 @@
 // Component
 // -----------------------------------------------------------------
 
-// @use './object/Component/_c-takeout__list' as *;
+@use './object/Component/_c-header__form' as *;
 
 
 // -----------------------------------------------------------------
@@ -29,8 +30,8 @@
 // -----------------------------------------------------------------
 
 @use './object/Project/_p-card' as *;
-@use './object/Project/_p-takeout__list' as *;
-@use './object/Project/_p-takeout__wrapper' as *;
+@use './object/Project/_p-takeout' as *;
+@use './object/Project/_p-access' as *;
 
 // -----------------------------------------------------------------
 // Utility

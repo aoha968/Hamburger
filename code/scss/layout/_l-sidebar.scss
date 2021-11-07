@@ -2,7 +2,7 @@
 
 @media (max-width:750px) {
     .l-sidebar {
-        display: block;     /* 検証用（あとでnoneに戻す） */
+        display: none;     /* 検証用（あとでnoneに戻す） */
         position:absolute;
         top:0;
         right:0;

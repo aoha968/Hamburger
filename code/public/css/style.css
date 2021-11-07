@@ -1,6 +1,6 @@
 @charset "UTF-8";
 html {
-  font-size: 100%;
+  font-size: 62.5%;
 }
 
 body {
@@ -27,39 +27,42 @@ h1, h2, h3, h4, P {
 
 @media (max-width: 750px) {
   .l-header {
-    background-color: #FFF7EF;
-    padding-bottom: 0;
-    /* 検索フォーム + ボタン */
-    /* Compornentになる想定 */
-  }
-  .l-header span {
-    display: block;
-    text-align: right;
-    font-size: 1.8rem;
-    font-weight: bold;
-    padding: 20px 20px 0px 0px;
-    margin: 0;
-    background-color: aqua;
-  }
-  .l-header .l-logo {
-    display: block;
-    margin: auto;
-  }
-  .l-header .l-mainvisual__wrapper {
-    position: relative;
-  }
-  .l-header .l-mainvisual__wrapper .l-sp {
     width: 100%;
-    height: 400px;
-    object-fit: cover;
+    height: 220px;
+    background-color: #FFF7EF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* 検索フォーム + ボタン */
   }
-  .l-header .l-mainvisual__wrapper p {
-    position: absolute;
-    font-size: 3rem;
+  .l-header__menu-btn {
+    font-size: 2rem;
+    display: block;
+    margin-left: auto;
     font-weight: bold;
-    color: #fff;
-    top: 40%;
-    left: 5%;
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+    cursor: pointer;
+  }
+  .l-header__logo {
+    margin-left: 3rem;
+  }
+  .l-header__logo a {
+    color: #707070;
+    font-size: 4rem;
+  }
+  .l-header__form {
+    margin: 1.8rem auto;
+  }
+  .l-header__form__box {
+    width: 25rem;
+    height: 3.5rem;
+    margin-right: 1rem;
+  }
+  .l-header__form__btn {
+    width: 7rem;
+    height: 3.5rem;
+    cursor: pointer;
   }
 }
 @media (max-width: 750px) {
@@ -70,7 +73,7 @@ h1, h2, h3, h4, P {
   .l-footer li {
     color: #fff;
     font-family: "M PLUS 1p", sans-serif;
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     padding-top: 50px;
     text-align: center;
   }
@@ -78,7 +81,7 @@ h1, h2, h3, h4, P {
     color: #fff;
     font-family: "M PLUS 1p", sans-serif;
     font-style: normal;
-    font-size: 1.2rem;
+    font-size: 2rem;
     text-align: center;
     padding-top: 30px;
   }
@@ -93,7 +96,7 @@ h1, h2, h3, h4, P {
 }
 @media (max-width: 750px) {
   .l-sidebar {
-    display: block;
+    display: none;
     /* 検証用（あとでnoneに戻す） */
     position: absolute;
     top: 0;
@@ -123,6 +126,45 @@ h1, h2, h3, h4, P {
     padding: 10px 0px 20px 65px;
   }
 }
+@media (max-width: 750px) {
+  .l-mainvisual__wrapper {
+    position: relative;
+  }
+  .l-mainvisual__wrapper .l-sp {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  .l-mainvisual__wrapper p {
+    position: absolute;
+    font-size: 4.8rem;
+    font-weight: bold;
+    color: #fff;
+    top: 40%;
+    left: 5%;
+  }
+}
+@media (max-width: 750px) {
+  .l-header__menu-btn {
+    color: #707070;
+    border: none;
+    /* 枠線を消す */
+    outline: none;
+    /* クリックしたときに表示される枠線を消す */
+    background: transparent;
+    /* 背景の灰色を消す */
+  }
+  .l-header__form__box {
+    border-radius: 0.6rem;
+    border: solid 1px #707070;
+    font-weight: 500;
+  }
+  .l-header__form__btn {
+    border-radius: 0.6rem;
+    border: solid 1px #707070;
+    color: #707070;
+  }
+}
 .p-card {
   position: relative;
   width: 100%;
@@ -138,7 +180,7 @@ h1, h2, h3, h4, P {
   color: #EAEAEA;
   top: 10px;
   left: 20px;
-  font-size: 2.8rem;
+  font-size: 4.8rem;
 }
 .p-card h2::before {
   position: absolute;
@@ -150,19 +192,82 @@ h1, h2, h3, h4, P {
 }
 
 @media (max-width: 750px) {
-  .p-takeout__list {
-    width: 90%;
-    margin: 0 auto 0;
-    padding-right: 2rem;
-    padding-bottom: 0.5rem;
-    padding-left: 1rem;
-    background-color: rgba(255, 255, 255, 0.7);
-  }
-}
-@media (max-width: 750px) {
   .p-takeout__wrapper {
     position: absolute;
     width: 100%;
     bottom: 1.3rem;
+  }
+  .p-takeout__list {
+    width: 90%;
+    margin: 0 auto 0;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  .p-takeout__list h3 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 3rem;
+  }
+  .p-takeout__list p {
+    font-size: 2rem;
+    padding-bottom: 5rem;
+  }
+}
+@media (max-width: 750px) {
+  .p_access {
+    width: 100%;
+    height: 650px;
+    position: relative;
+    overflow: hidden;
+  }
+  .p_access iframe {
+    position: absolute;
+  }
+  .p_access__text {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 15;
+    padding: 20px 0 0 40px;
+  }
+  .p_access__text h3 {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: normal;
+  }
+  .p_access__text h3::after {
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 3px;
+    background-color: #fff;
+    top: 100px;
+    left: 50px;
+  }
+  .p_access__text p {
+    padding-top: 30px;
+    color: #fff;
+    line-height: 1.8;
+    font-size: 16px;
+  }
+
+  .c-layer1 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  }
+
+  .c-layer2 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 5;
   }
 }
