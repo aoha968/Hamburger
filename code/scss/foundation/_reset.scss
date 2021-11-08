@@ -4,8 +4,9 @@ html {
     font-size: 62.5%;
 }
 body {
-    color: $text-black;
-    font-family: 'Roboto', sans-serif;
+    color: #3C2A10;
+    font-family:'Roboto', 'M PLUS 1p','ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    font-size: 1.6rem;
 }
 a{
     color: $text-black;
@@ -17,6 +18,14 @@ ul {
 li {
     list-style: none;
 }
-h1, h2, h3, h4, P {
-    margin: 1rem;
+dd {
+    margin-left: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+button, input, form {
+    padding: 0;
+    margin: 0;
 }
