@@ -1,4 +1,5 @@
 @use '../foundation/_variable' as *;
+@use '../object/Utility/_mixin' as *;
 
 @media (max-width:750px) {
     .l-mainvisual__wrapper {

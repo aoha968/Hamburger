@@ -35,9 +35,4 @@
 // Utility
 // -----------------------------------------------------------------
 
-//@import "object/utility/_align";
-//@import "object/utility/_clearfix";
-//@import "object/utility/_margin";
-//@import "object/utility/_position";
-//@import "object/utility/_size";
-//@import "object/utility/_text";
+@use './object/Utility/_mixin' as *;

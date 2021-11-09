@@ -44,55 +44,79 @@ button, input, form {
   margin: 0;
 }
 
-@media (max-width: 750px) {
+/* マップの定義 */
+/* mixinの定義 */
+.l-header {
+  width: 100%;
+  height: 220px;
+  background-color: #FFF7EF;
+  text-align: center;
+  /* 検索フォーム + ボタン */
+}
+@media screen and (min-width: 1025px) {
   .l-header {
-    width: 100%;
-    height: 220px;
-    background-color: #FFF7EF;
-    text-align: center;
-    /* 検索フォーム + ボタン */
-  }
-  .l-header__menu-btn {
-    font-size: 2rem;
-    display: block;
-    margin-left: auto;
-    font-weight: bold;
-    padding-top: 10px;
-    padding-right: 20px;
-    cursor: pointer;
-  }
-  .l-header__logo {
-    font-size: 4rem;
-    font-weight: bold;
-    color: #707070;
-    margin-bottom: 30px;
-  }
-  .l-header__form {
-    width: 100%;
-  }
-  .l-header__form__wrap {
-    position: relative;
-    display: inline;
-  }
-  .l-header__form__search {
-    width: 55%;
-    height: 46px;
-    border-radius: 10px;
-    border: 1px solid #707070;
-    margin-right: 4px;
-    text-align: left;
-    padding-left: 36px;
-    position: relative;
-  }
-  .l-header__form__btn {
-    width: 15%;
-    height: 46px;
-    border-radius: 10px;
-    border: 1px solid #707070;
-    background: linear-gradient(#f2ede9 0%, #ded8d3 100%);
-    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
+.l-header__menu-btn {
+  font-size: 2rem;
+  display: block;
+  margin-left: auto;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+@media screen and (min-width: 1025px) {
+  .l-header__menu-btn {
+    display: none;
+  }
+}
+.l-header__logo {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #707070;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1025px) {
+  .l-header__logo {
+    margin-bottom: 0;
+    font-size: 6.4rem;
+  }
+}
+.l-header__form {
+  width: 100%;
+}
+.l-header__form__wrap {
+  position: relative;
+  display: inline;
+}
+@media screen and (min-width: 1025px) {
+  .l-header__form {
+    text-align: right;
+  }
+}
+.l-header__form__search {
+  width: 55%;
+  height: 46px;
+  border-radius: 10px;
+  border: 1px solid #707070;
+  margin-right: 4px;
+  text-align: left;
+  padding-left: 36px;
+  position: relative;
+}
+.l-header__form__btn {
+  width: 15%;
+  height: 46px;
+  border-radius: 10px;
+  border: 1px solid #707070;
+  background: linear-gradient(#f2ede9 0%, #ded8d3 100%);
+  cursor: pointer;
+}
+
 @media (max-width: 750px) {
   .l-footer {
     background-image: url(../../img/footer.png);

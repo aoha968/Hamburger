@@ -1,0 +1,12 @@
+/* マップの定義 */
+$breakpoints: (
+    'tab': 'screen and (min-width: 600px)',
+    'pc': 'screen and (min-width: 1025px)',
+) !default;
+
+/* mixinの定義 */
+@mixin mq($breakpoint: tab) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
