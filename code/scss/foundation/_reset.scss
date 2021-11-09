@@ -8,6 +8,12 @@ body {
     font-family:'Roboto', 'M PLUS 1p','ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
     font-size: 1.6rem;
 }
+article {
+    display: block;
+}
+aside{
+    display: block;
+}
 a{
     color: $text-black;
     text-decoration: none;
