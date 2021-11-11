@@ -7,6 +7,10 @@ body {
     color: #3C2A10;
     font-family:'Roboto', 'M PLUS 1p','ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
     font-size: 1.6rem;
+    /* bodyとfooterの隙間をなくす */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 article {
     display: block;
