@@ -87,6 +87,7 @@ button, input, form {
 @media screen and (min-width: 1025px) {
   .l-header__logo {
     margin-bottom: 0;
+    margin-left: 60px;
     font-size: 6.4rem;
   }
 }
@@ -96,6 +97,15 @@ button, input, form {
 .l-header__form__wrap {
   position: relative;
   display: inline;
+}
+.l-header__form__wrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 8px;
+  background: url(../../img/search.png) no-repeat;
+  width: 30px;
+  height: 30px;
 }
 @media screen and (min-width: 1025px) {
   .l-header__form {

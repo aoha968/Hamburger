@@ -32,6 +32,7 @@
         margin-bottom: 30px;
         @include mq('pc') {
             margin-bottom: 0;
+            margin-left: 60px;
             font-size: 6.4rem;
         }
     }
@@ -42,6 +43,15 @@
         &__wrap {
             position: relative;
             display: inline;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 8px;
+                background: url(../../img/search.png) no-repeat;
+                width: 30px;
+                height: 30px;
+            }
         }
         @include mq('pc') {
             text-align:right;
