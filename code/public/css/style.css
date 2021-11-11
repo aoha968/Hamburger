@@ -117,27 +117,26 @@ button, input, form {
   cursor: pointer;
 }
 
-@media (max-width: 750px) {
-  .l-footer {
-    background-image: url(../../img/footer.png);
-    height: 200px;
-  }
-  .l-footer li {
-    color: #fff;
-    font-family: "M PLUS 1p", sans-serif;
-    font-size: 2.5rem;
-    padding-top: 50px;
-    text-align: center;
-  }
-  .l-footer address {
-    color: #fff;
-    font-family: "M PLUS 1p", sans-serif;
-    font-style: normal;
-    font-size: 2rem;
-    text-align: center;
-    padding-top: 30px;
-  }
+.l-footer {
+  background-image: url(../../img/footer.png);
+  height: 200px;
 }
+.l-footer li {
+  color: #fff;
+  font-family: "M PLUS 1p", sans-serif;
+  font-size: 2.5rem;
+  padding-top: 50px;
+  text-align: center;
+}
+.l-footer address {
+  color: #fff;
+  font-family: "M PLUS 1p", sans-serif;
+  font-style: normal;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 30px;
+}
+
 @media (max-width: 750px) {
   .l-sideber__bg {
     display: none;
@@ -189,45 +188,56 @@ button, input, form {
     transform: translateX(0);
   }
 }
-@media (max-width: 750px) {
+.l-mainvisual__wrapper {
+  background: url(../../img/mainvisual-sp@2x.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 285px;
+  padding-left: 25px;
+  margin-bottom: 30px;
+}
+.l-mainvisual__wrapper h2 {
+  color: #fff;
+  font-size: 5rem;
+  font-weight: bold;
+}
+@media screen and (min-width: 600px) {
   .l-mainvisual__wrapper {
-    background: url(../../img/mainvisual-sp@2x.jpg) no-repeat;
+    background: url(../../img/mainvisual-pc@2x.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 285px;
-    padding-left: 25px;
-    margin-bottom: 30px;
-  }
-  .l-mainvisual__wrapper h2 {
-    color: #fff;
-    font-size: 5rem;
-    font-weight: bold;
+    margin-bottom: 120px;
   }
 }
-@media (max-width: 750px) {
-  .l-header__menu-btn {
-    color: #707070;
-    border: none;
-    /* 枠線を消す */
-    outline: none;
-    /* クリックしたときに表示される枠線を消す */
-    background: transparent;
-    /* 背景の灰色を消す */
-  }
-  .l-header__form__box {
-    border-radius: 0.6rem;
-    border: solid 1px #707070;
-    font-weight: 500;
-  }
-  .l-header__form__btn {
-    border-radius: 0.6rem;
-    border: solid 1px #707070;
-    color: #707070;
+@media screen and (min-width: 1025px) {
+  .l-mainvisual__wrapper {
+    height: 530px;
   }
 }
+
+.l-header__menu-btn {
+  color: #707070;
+  border: none;
+  /* 枠線を消す */
+  outline: none;
+  /* クリックしたときに表示される枠線を消す */
+  background: transparent;
+  /* 背景の灰色を消す */
+}
+.l-header__form__box {
+  border-radius: 0.6rem;
+  border: solid 1px #707070;
+  font-weight: 500;
+}
+.l-header__form__btn {
+  border-radius: 0.6rem;
+  border: solid 1px #707070;
+  color: #707070;
+}
+
 @media (max-width: 750px) {
   .c-menu__btn {
     position: absolute;
