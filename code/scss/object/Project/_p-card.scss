@@ -1,12 +1,21 @@
 @use '../../foundation/_variable' as *;
+@use '../../object/Utility/_mixin' as *;
 
 .p-card {
     padding: 0 20px;
     margin-bottom: 60px;
+    @include mq('tab') {
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-around;
+    }
     &__list {
         padding: 3%;
-        margin-bottom: 20px;
-        width: 100%
+        margin-bottom: 10px;
+        width: 100%;
+        @include mq('tab') {
+            width: 45%;
+        }
     }
 
     &__list h2 {
