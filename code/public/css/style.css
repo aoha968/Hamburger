@@ -338,60 +338,80 @@ button, input, form {
   background-position: center center;
 }
 
-@media (max-width: 750px) {
+.p-access {
+  position: relative;
+  width: 100%;
+  color: #fff;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  padding-left: calc(20px + 3%);
+  padding-right: calc(20px + 3%);
+}
+@media screen and (min-width: 1025px) {
   .p-access {
-    position: relative;
-    width: 100%;
-    color: #fff;
-    padding-top: 40px;
-    padding-bottom: 50px;
-    padding-left: calc(20px + 3%);
-    padding-right: calc(20px + 3%);
+    padding-left: 0;
+    padding-right: 0;
   }
-  .p-access iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -3;
-  }
-  .p-access .c-layer1 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: -2;
-  }
+}
+.p-access iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+}
+.p-access .c-layer1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -2;
+}
+.p-access .c-layer2 {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+@media screen and (min-width: 600px) {
   .p-access .c-layer2 {
-    position: absolute;
-    width: 100%;
-    height: 60%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: -1;
+    height: 100%;
   }
+}
+@media screen and (min-width: 1025px) {
+  .p-access .c-layer2 {
+    width: 60%;
+  }
+}
+.p-access__text {
+  font-size: 1.4rem;
+  line-height: 2;
+}
+@media screen and (min-width: 1025px) {
   .p-access__text {
-    font-size: 1.4rem;
-    line-height: 2;
+    width: 60%;
+    padding: 1%;
   }
-  .p-access__text h2 {
-    position: relative;
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 40px;
-  }
-  .p-access__text h2::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 75px;
-    height: 3px;
-    background-color: #fff;
-    bottom: -18px;
-    left: 0;
-  }
+}
+.p-access__text h2 {
+  position: relative;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.p-access__text h2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 75px;
+  height: 3px;
+  background-color: #fff;
+  bottom: -18px;
+  left: 0;
 }
