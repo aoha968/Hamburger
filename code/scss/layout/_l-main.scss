@@ -7,10 +7,3 @@
         height: 100%;
     }
 }
-
-.l-main__container {
-    @include mq('pc') {
-        // grid-area:main;
-    }
-}
-

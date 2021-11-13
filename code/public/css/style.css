@@ -93,6 +93,7 @@ button, input, form {
 }
 .l-header__form {
   width: 100%;
+  margin-right: 40px;
 }
 .l-header__form__wrap {
   position: relative;
@@ -132,6 +133,7 @@ button, input, form {
 }
 
 .l-footer {
+  font-family: "M PLUS 1p";
   background-image: url(../../img/footer.png);
   height: 200px;
 }
@@ -174,6 +176,7 @@ button, input, form {
   right: -120%;
   width: 85%;
   height: 100%;
+  font-family: "M PLUS 1p";
   overflow-y: scroll;
   background-color: #f2ede9;
   padding-top: 170px;
@@ -196,12 +199,14 @@ button, input, form {
 }
 .l-sidebar h2 {
   display: none;
+  font-family: "Roboto";
+  color: #707070;
 }
 @media screen and (min-width: 1025px) {
   .l-sidebar h2 {
     display: block;
     font-size: 3rem;
-    margin-left: 46px;
+    margin-left: 35px;
     margin-bottom: 85px;
   }
 }
