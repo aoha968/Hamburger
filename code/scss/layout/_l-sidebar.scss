@@ -1,8 +1,7 @@
 @use '../foundation/_variable' as *;
 @use '../object/Utility/_mixin' as *;
 
-.l-sideber__bg {
-    display: none;      /* blockへの切替制御はjs */
+.l-sidebar__bg {
     /*  グレー背景 + サイドバーが表示時は
         html, bodyにoverflow: hidden; を設定することでスクロール禁止にする
         メニューボタンを押下したタイミングのため、制御はjs  */
@@ -12,23 +11,24 @@
     z-index: 99;
     background-color: rgba(51, 51, 51, 0.5);
     top: 0;
-    left: 0;
+    right: -120%;
+    transition: all 0.6s;
+    &.open{
+        right: 0;
+    }
 }
 
 .l-sidebar {
-    display: none;     /* 検証用（あとでnoneに戻す） */
-    &::-webkit-scrollbar {
-        display: none;      /* Chrome、Safariでスクロールバーを消す */
-    }
     position:fixed;
     top:0;
-    right:0;
+    right: -120%;
     width:85%;
     height: 100%;
     overflow-y: scroll;
     background-color: #f2ede9;
     padding-top: 170px;
     z-index: 100;
+    transition: all 0.6s;
     @include mq('tab') {
         min-width: 360px;
         width: 40%;
@@ -60,6 +60,6 @@
         padding:30px 0px 5px 65px;
     }
     &.open{
-        transform: translateX(0);  
+        right: 0;
     }
 }
