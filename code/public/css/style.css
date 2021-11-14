@@ -65,7 +65,7 @@ button, input, form {
   }
 }
 .l-header__menu-btn {
-  font-size: 2rem;
+  font-size: 2.5rem;
   display: block;
   margin-left: auto;
   font-weight: bold;
@@ -126,10 +126,8 @@ button, input, form {
 .l-header__form__btn {
   width: 15%;
   height: 46px;
-  border-radius: 10px;
-  border: 1px solid #707070;
-  background: linear-gradient(#f2ede9 0%, #ded8d3 100%);
-  cursor: pointer;
+  padding-top: 1px;
+  /* 検索ボックスと上下合わせるための調整用 */
 }
 
 .l-footer {
@@ -164,7 +162,7 @@ button, input, form {
   background-color: rgba(51, 51, 51, 0.5);
   top: 0;
   right: -120%;
-  transition: all 0.6s;
+  transition: right 0.6s;
 }
 .l-sidebar__bg.open {
   right: 0;
@@ -181,7 +179,6 @@ button, input, form {
   background-color: #f2ede9;
   padding-top: 170px;
   z-index: 100;
-  transition: all 0.6s;
 }
 @media screen and (min-width: 600px) {
   .l-sidebar {
@@ -191,10 +188,10 @@ button, input, form {
 }
 @media screen and (min-width: 1025px) {
   .l-sidebar {
-    display: block;
     padding-top: 80px;
     position: static;
     height: auto;
+    right: 0;
   }
 }
 .l-sidebar h2 {
@@ -272,15 +269,12 @@ button, input, form {
   background: transparent;
   /* 背景の灰色を消す */
 }
-.l-header__form__box {
-  border-radius: 0.6rem;
-  border: solid 1px #707070;
-  font-weight: 500;
-}
 .l-header__form__btn {
-  border-radius: 0.6rem;
+  border-radius: 10px;
   border: solid 1px #707070;
   color: #707070;
+  background: linear-gradient(#f2ede9 0%, #ded8d3 100%);
+  cursor: pointer;
 }
 
 .c-menu__btn {

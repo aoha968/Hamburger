@@ -5,16 +5,17 @@ $(window).resize(function(){
     var window_width = window.innerWidth;
     var pc_width = 1025;
     var timer = false;
+    var sidebar = $(".l-main").find(".l-sidebar");
 
     if(timer !== false){
         clearTimeout(timer);
     }
     timer = setTimeout(function(){
-    if( pc_width <= window_width){
-        MenuClose();
-    }
-    })
-
+        if(pc_width <= window_width)
+            if($(sidebar).hasClass('open')){
+                MenuClose();
+        }
+    });
 });
 
 /*======================================
