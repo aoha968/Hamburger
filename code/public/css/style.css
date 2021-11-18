@@ -322,6 +322,42 @@ span::after {
   -webkit-transform: rotate(45deg);
 }
 
+.c-pagenation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.c-pagenation span {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  border: none;
+  padding: 3px 5px;
+  margin: 6px;
+}
+.c-pagenation__current {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border: 1px solid #707070;
+  margin-right: 15px;
+  color: #fff;
+  background-color: #3C2B1C;
+}
+.c-pagenation a {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #707070;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border: 1px solid #707070;
+  margin: 6px;
+  padding: 3px 5px;
+}
+.c-pagenation .prev, .c-pagenation .next {
+  border: none;
+}
+
 .p-card {
   padding: 0 20px;
   margin-bottom: 60px;
@@ -379,6 +415,56 @@ span::after {
   background: url(../../../img/eatin.png) no-repeat;
   background-size: cover;
   background-position: center center;
+}
+
+.wrap {
+  width: 100%;
+  padding: 40px;
+}
+
+.a {
+  background-color: aqua;
+}
+.a h2 {
+  font-weight: bold;
+}
+.a p {
+  font-size: 10px;
+}
+
+.b {
+  display: flex;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.b img {
+  width: 50%;
+}
+.b .c {
+  background-color: #3C2B1C;
+  color: #fff;
+}
+.b .c h2 {
+  padding: 30px;
+}
+.b .c h3 {
+  padding-left: 30px;
+}
+.b .c p {
+  font-size: 12px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.b .c .bb {
+  text-align: center;
+}
+.b .c .bb button {
+  font-size: 12px;
+  padding: 20px 60px;
+  border-radius: 30px;
+  margin-bottom: 40px;
 }
 
 .p-access {
