@@ -327,7 +327,7 @@ span::after {
   justify-content: center;
   margin-bottom: 40px;
 }
-.c-pagenation span {
+.c-pagenation p {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   border: none;
