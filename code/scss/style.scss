@@ -13,6 +13,7 @@
 @use './layout/_l-sidebar' as *;
 @use './layout/_l-mainvisual' as *;
 @use './layout/_l-main' as *;
+@use './layout/_l-visual' as *;
 
 // ==========================================================================
 // Object
@@ -25,6 +26,7 @@
 @use './object/Component/_c-header__form' as *;
 @use './object/Component/_c-menu__btn' as *;
 @use './object/Component/_c-pagenation' as *;
+@use './object/Component/_c-visual__layer' as *;
 
 // -----------------------------------------------------------------
 // Project

@@ -16,28 +16,28 @@
     @include mq('pc') {
         display: none;
     }
-}
-span::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 0;
-    background: #707070;
-    width: 40px;
-    height: 5px;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-}
-span::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 0;
-    background: #707070;
-    width: 40px;
-    height: 5px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
+    span::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 0;
+        background: #707070;
+        width: 40px;
+        height: 5px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+    span::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 0;
+        background: #707070;
+        width: 40px;
+        height: 5px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+    }
 }
