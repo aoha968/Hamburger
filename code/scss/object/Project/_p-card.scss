@@ -75,10 +75,19 @@
     }
     &__menu__list {
         display: flex;
+        flex-direction: column;
+        @include mq('tab') {
+            flex-direction: row;
+        }
         width: 100%;
         padding-bottom: 20px;
         img {
-            width: 50%;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            @include mq('tab') {
+                width: 50%;
+            }
         }
         &__detail {
             background-color: #3C2B1C;

@@ -13,6 +13,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script type="text/javascript" src="../js/main.js"></script>
     </head>
@@ -45,7 +46,7 @@
                         </div>
                         <ul class="wrap__menu">
                             <li class="wrap__menu__list">
-                                <img src="../img/archive_contents.png">
+                                <img S src="../img/archive_contents.png">
                                 <div class="wrap__menu__list__detail">
                                     <h2>チーズバーガー</h2>
                                     <h3>小見出しが入ります</h3>
@@ -80,18 +81,24 @@
                         </ul>
                     </div>
                     <div class="c-pagenation">
-                        <p class="c-pagenation__page">page 1/10</p>
-                        <a class="prev" href="#">&lt;&lt;</a>
-                        <p class="c-pagenation__current">1</p>
-                        <a href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                        <a href="#">6</a>
-                        <a href="#">7</a>
-                        <a href="#">8</a>
-                        <a href="#">9</a>
-                        <a class="next" href="#">&gt;&gt;</a>
+                        <span class="c-pagenation__pageview">page 1/10</span>
+                        <a class="prev" href="#">
+                            <i class="fas fa-angle-double-left"></i>
+                            <span class="c-pagenation__pagetext">前へ</span>
+                        </a>
+                        <p class="c-pagenation__current c-pagenation__page -page__tab">1</p>
+                        <a class="c-pagenation__page -page__tab" href="#">2</a>
+                        <a class="c-pagenation__page -page__tab"  href="#">3</a>
+                        <a class="c-pagenation__page -page__tab"  href="#">4</a>
+                        <a class="c-pagenation__page -page__tab"  href="#">5</a>
+                        <a class="c-pagenation__page -page__tab" href="#">6</a>
+                        <a class="c-pagenation__page -page__tab" href="#">7</a>
+                        <a class="c-pagenation__page -page__tab" href="#">8</a>
+                        <a class="c-pagenation__page -page__tab" href="#">9</a>
+                        <a class="next" href="#">
+                            <span  class="c-pagenation__pagetext">次へ</span>
+                            <i class="fas fa-angle-double-right"></i>
+                        </a>
                     </div>
                 </article>
             </div>

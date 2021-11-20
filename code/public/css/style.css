@@ -372,8 +372,13 @@ button, input, form {
 
 .c-pagenation {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 40px;
+}
+@media screen and (min-width: 600px) {
+  .c-pagenation {
+    justify-content: center;
+  }
 }
 .c-pagenation p {
   font-family: "Roboto", sans-serif;
@@ -381,6 +386,15 @@ button, input, form {
   border: none;
   padding: 3px 5px;
   margin: 6px;
+}
+.c-pagenation__page.-page__tab {
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  .c-pagenation__page.-page__tab {
+    display: flex;
+    justify-content: center;
+  }
 }
 .c-pagenation__current {
   width: 35px;
@@ -402,8 +416,28 @@ button, input, form {
   margin: 6px;
   padding: 3px 5px;
 }
+.c-pagenation__pageview {
+  display: none;
+  margin: 8px;
+}
+@media screen and (min-width: 600px) {
+  .c-pagenation__pageview {
+    width: auto;
+    display: inline-block;
+    white-space: nowrap;
+  }
+}
+.c-pagenation__pagetext {
+  margin: 8px;
+}
+@media screen and (min-width: 600px) {
+  .c-pagenation__pagetext {
+    display: none;
+  }
+}
 .c-pagenation .prev, .c-pagenation .next {
   border: none;
+  width: 80px;
 }
 
 .c-visual__layer {
@@ -488,11 +522,24 @@ button, input, form {
 }
 .wrap__menu__list {
   display: flex;
+  flex-direction: column;
   width: 100%;
   padding-bottom: 20px;
 }
+@media screen and (min-width: 600px) {
+  .wrap__menu__list {
+    flex-direction: row;
+  }
+}
 .wrap__menu__list img {
-  width: 50%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+@media screen and (min-width: 600px) {
+  .wrap__menu__list img {
+    width: 50%;
+  }
 }
 .wrap__menu__list__detail {
   background-color: #3C2B1C;

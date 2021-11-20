@@ -1,13 +1,26 @@
+@use '../../object/Utility/mixin' as *;
+
 .c-pagenation{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    @include mq('tab') {
+        justify-content: center;
+    }
     margin-bottom: 40px;
+
     p {
         font-family: 'Roboto', sans-serif;
         font-weight: bold;
         border: none;
         padding: 3px 5px;
         margin: 6px;
+    }
+    &__page.-page__tab {
+        display: none;
+        @include mq('tab') {
+            display: flex;
+            justify-content: center;
+        }
     }
     &__current {
         width: 35px;
@@ -29,7 +42,23 @@
         margin: 6px;
         padding: 3px 5px;
     }
+    &__pageview {
+        display: none;
+        margin: 8px;
+        @include mq('tab') {
+            width: auto;
+            display: inline-block;
+            white-space: nowrap;
+        }
+    }
+    &__pagetext {
+        margin: 8px;
+        @include mq('tab') {
+            display: none;
+        }
+    }
     .prev, .next {
         border: none;
+        width: 80px;
     }
 }
