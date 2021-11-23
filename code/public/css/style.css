@@ -324,6 +324,21 @@ button, input, form {
   font-weight: bold;
 }
 
+.c-backquote {
+  background-color: #F5F5F5;
+}
+.c-backquote p {
+  box-sizing: border-box;
+}
+.c-backquote cite {
+  box-sizing: border-box;
+  font-style: normal;
+}
+.c-backquote cite a {
+  color: #4A6C9B;
+  text-decoration: underline;
+}
+
 .c-code {
   width: 100%;
   font-family: "M PLUS 1p";
@@ -394,6 +409,35 @@ button, input, form {
   height: 5px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+}
+
+.c-list {
+  width: 100%;
+  font-size: 16px;
+  padding: 6px;
+}
+.c-list ol {
+  font-family: "M PLUS 1p";
+  line-height: 1.6;
+  counter-reset: count 0;
+}
+.c-list ol li {
+  list-style: none;
+}
+.c-list ol li:before {
+  content: counter(count) ". ";
+  counter-increment: count 1;
+}
+.c-list ol li ol {
+  padding: 30px 20px;
+}
+.c-list ul {
+  font-family: "M PLUS 1p";
+  line-height: 1.6;
+  padding-top: 60px;
+}
+.c-list ul li ul {
+  padding: 30px 20px;
 }
 
 .c-pagenation {
@@ -762,22 +806,12 @@ button, input, form {
   font-size: 2.8rem;
   font-weight: 600;
 }
-.posted__quote {
-  background-color: #F5F5F5;
+.posted .c-backquote {
   margin-bottom: 30px;
   padding: 50px;
 }
-.posted__quote p {
-  box-sizing: border-box;
+.posted .c-backquote p {
   padding-bottom: 50px;
-}
-.posted__quote cite {
-  box-sizing: border-box;
-  font-style: normal;
-}
-.posted__quote cite a {
-  color: #4A6C9B;
-  text-decoration: underline;
 }
 .posted__single img {
   width: 100%;
@@ -836,34 +870,6 @@ button, input, form {
     margin: 0 10px 0 10px;
   }
 }
-.posted__list {
-  width: 100%;
-  padding: 6px;
-  font-size: 16px;
-}
-.posted__list ol {
-  font-family: "M PLUS 1p";
-  line-height: 1.6;
-  counter-reset: count 0;
-}
-.posted__list ol li {
-  list-style: none;
-}
-.posted__list ol li:before {
-  content: counter(count) ". ";
-  counter-increment: count 1;
-}
-.posted__list ol li ol {
-  padding: 30px 20px;
-}
-.posted__list ul {
-  font-family: "M PLUS 1p";
-  line-height: 1.6;
-  padding-top: 60px;
-}
-.posted__list ul li ul {
-  padding: 30px 20px;
-}
 .posted__btn {
   width: 100%;
   padding-bottom: 60px;
@@ -886,5 +892,6 @@ button, input, form {
   margin-bottom: 300px;
 }
 .posted__text p {
+  font-size: 20px;
   font-weight: bold;
 }

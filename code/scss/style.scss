@@ -23,9 +23,11 @@
 // Component
 // -----------------------------------------------------------------
 
+@use './object/Component/c-backquote' as *;
 @use './object/Component/c-code' as *;
 @use './object/Component/_c-header__form' as *;
 @use './object/Component/_c-menu__btn' as *;
+@use './object/Component/c-list' as *;
 @use './object/Component/_c-pagenation' as *;
 @use './object/Component/c-table' as *;
 @use './object/Component/c-tile' as *;
