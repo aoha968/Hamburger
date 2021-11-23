@@ -88,20 +88,35 @@
             }
         }
     }
-}
-blockquote {
-    background-color: #F5F5F5;
-}
-img {
-    width: 100%;
-}
 
-ol {
-	counter-reset: li;  /* olのリストの数字をリセット */
-    > li:before {
-        counter-increment: li;      /* リストの数字を1つ進める */
-        content: counter(li) ".";   /* リストを連番にする */
-        margin-right: 1rem;         /* 要素が重なるから右へ移動 */
-        line-height: 1.6;           /* 文字が重なるのを防止 */
+    &__list {
+        width: 100%;
+        padding: 6px;
+        font-size: 16px;
+        ol {
+            font-family: 'M PLUS 1p';
+            line-height: 1.6;
+            counter-reset: count 0;
+            li {
+                list-style: none;
+                &:before {
+                    content: counter(count) ". ";
+                    counter-increment: count 1;
+                }
+                ol {
+                    padding: 30px 20px;
+                }
+            }
+        }
+        ul {
+            font-family: 'M PLUS 1p';
+            line-height: 1.6;
+            padding-top: 60px;
+            li {
+                ul {
+                    padding: 30px 20px;
+                }
+            }
+        }
     }
 }

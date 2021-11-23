@@ -324,6 +324,18 @@ button, input, form {
   font-weight: bold;
 }
 
+.c-code {
+  width: 100%;
+  font-family: "M PLUS 1p";
+  background-color: #F5F5F5;
+  margin: 0;
+  padding: 50px;
+}
+.c-code code {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
 .l-header__menu-btn {
   color: #707070;
   border: none;
@@ -452,6 +464,31 @@ button, input, form {
 .c-pagenation .prev, .c-pagenation .next {
   border: none;
   width: 80px;
+}
+
+.c-table {
+  width: 100%;
+  padding: 60px 0;
+}
+.c-table table {
+  font-size: 16px;
+  width: 100%;
+  border-collapse: collapse;
+}
+.c-table table tr {
+  padding: 30px;
+}
+.c-table table tr th, .c-table table tr td {
+  padding: 30px;
+  font-weight: 500;
+  border: solid 1px;
+  text-align: inherit;
+}
+.c-table table tr .left {
+  width: 40%;
+}
+.c-table table tr .right {
+  width: 60%;
 }
 
 .c-tile {
@@ -787,26 +824,31 @@ button, input, form {
     margin: 0 10px 0 10px;
   }
 }
-
-blockquote {
-  background-color: #F5F5F5;
-}
-
-img {
+.posted__list {
   width: 100%;
+  padding: 6px;
+  font-size: 16px;
 }
-
-ol {
-  counter-reset: li;
-  /* olのリストの数字をリセット */
-}
-ol > li:before {
-  counter-increment: li;
-  /* リストの数字を1つ進める */
-  content: counter(li) ".";
-  /* リストを連番にする */
-  margin-right: 1rem;
-  /* 要素が重なるから右へ移動 */
+.posted__list ol {
+  font-family: "M PLUS 1p";
   line-height: 1.6;
-  /* 文字が重なるのを防止 */
+  counter-reset: count 0;
+}
+.posted__list ol li {
+  list-style: none;
+}
+.posted__list ol li:before {
+  content: counter(count) ". ";
+  counter-increment: count 1;
+}
+.posted__list ol li ol {
+  padding: 30px 20px;
+}
+.posted__list ul {
+  font-family: "M PLUS 1p";
+  line-height: 1.6;
+  padding-top: 60px;
+}
+.posted__list ul li ul {
+  padding: 30px 20px;
 }
