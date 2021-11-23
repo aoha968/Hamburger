@@ -736,6 +736,7 @@ button, input, form {
 }
 
 .posted {
+  font-family: "M PLUS 1p";
   font-size: 1.4rem;
   line-height: 2;
   margin: 0 40px;
@@ -750,8 +751,19 @@ button, input, form {
 }
 .posted__title h2 {
   margin-bottom: 30px;
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+.posted__title h3 {
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+.posted__title h4, .posted__title h5, .posted__title h6 {
+  font-size: 2.8rem;
+  font-weight: 600;
 }
 .posted__quote {
+  background-color: #F5F5F5;
   margin-bottom: 30px;
   padding: 50px;
 }
@@ -851,4 +863,28 @@ button, input, form {
 }
 .posted__list ul li ul {
   padding: 30px 20px;
+}
+.posted__btn {
+  width: 100%;
+  padding-bottom: 60px;
+}
+.posted__btn button {
+  background-color: #F2EDE9;
+  border: solid 1px;
+  border-radius: 30px;
+}
+.posted__btn button a {
+  display: block;
+  width: 430px;
+  color: #3C2A10;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 100px;
+}
+.posted__text {
+  width: 100%;
+  margin-bottom: 300px;
+}
+.posted__text p {
+  font-weight: bold;
 }

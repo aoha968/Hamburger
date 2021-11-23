@@ -2,19 +2,32 @@
 @use '../../object/Utility/_mixin' as *;
 
 .posted {
+    font-family: 'M PLUS 1p';
     font-size: 1.4rem;
     line-height: 2;
     margin: 0 40px;
     @include mq('pc') {
         width: 90%;
     }
+    
     &__title {
         margin: 30px 0px;
         h2 {
             margin-bottom: 30px;
+            font-size: 3.6rem;
+            font-weight: 600;
+        }
+        h3 {
+            font-size: 3.2rem;
+            font-weight: 600;
+        }
+        h4, h5, h6 {
+            font-size: 2.8rem;
+            font-weight: 600;
         }
     }
     &__quote {
+        background-color: #F5F5F5;
         margin-bottom: 30px;
         padding: 50px;
         p {
@@ -117,6 +130,30 @@
                     padding: 30px 20px;
                 }
             }
+        }
+    }
+    &__btn {
+        width: 100%;
+        padding-bottom: 60px;
+        button {
+            background-color: #F2EDE9;
+            border: solid 1px;
+            border-radius: 30px;
+            a {
+                display: block;
+                width: 430px;
+                color: #3C2A10;
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 100px;
+            }
+        }
+    }
+    &__text {
+        width: 100%;
+        margin-bottom: 300px;
+        p {
+            font-weight: bold;
         }
     }
 }
