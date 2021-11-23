@@ -26,6 +26,8 @@
 @use './object/Component/_c-header__form' as *;
 @use './object/Component/_c-menu__btn' as *;
 @use './object/Component/_c-pagenation' as *;
+@use './object/Component/c-tile' as *;
+@use './object/Component/c-two__column' as *;
 @use './object/Component/_c-visual__layer' as *;
 
 // -----------------------------------------------------------------
@@ -34,6 +36,7 @@
 
 @use './object/Project/_p-card' as *;
 @use './object/Project/_p-access' as *;
+@use './object/Project/_p-posted' as *;
 
 // -----------------------------------------------------------------
 // Utility

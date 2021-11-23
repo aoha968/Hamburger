@@ -306,8 +306,22 @@ button, input, form {
 .l-visual.-achive {
   background: url("../../img/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.jpg") no-repeat;
   background-size: cover;
-  background-position: 10%;
+  background-position: 50% 50%;
   background-size: auto;
+}
+
+.l-visual.-single {
+  background: url("../../img/ham-burger-with-vegetables-1639557.png") no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.l-visual.-single h1 {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  color: #fff;
+  font-size: 4.5rem;
+  font-weight: bold;
 }
 
 .l-header__menu-btn {
@@ -438,6 +452,44 @@ button, input, form {
 .c-pagenation .prev, .c-pagenation .next {
   border: none;
   width: 80px;
+}
+
+.c-tile {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.c-tile__list {
+  box-sizing: border-box;
+}
+
+.c-two__column {
+  max-width: 100%;
+}
+.c-two__column li {
+  display: flex;
+  align-items: center;
+  /*      必要に応じて使用側で設定
+          margin-bottom: ○○px;
+          .image {
+              width: ○○%;
+          }
+          .text {
+              width: ○○%;
+          }
+  */
+  /* 奇数の行に対して指定 */
+  /*      必要に応じて使用側で設定
+          &:nth-child(even) .text {
+              padding-right: ○○px;
+          }
+          &:nth-child(odd) .text {
+              padding-left: ○○px;
+          }
+  */
+}
+.c-two__column li:nth-child(even) {
+  flex-direction: row-reverse;
 }
 
 .c-visual__layer {
@@ -644,4 +696,117 @@ button, input, form {
   background-color: #fff;
   bottom: -18px;
   left: 0;
+}
+
+.posted {
+  font-size: 1.4rem;
+  line-height: 2;
+  margin: 0 40px;
+}
+@media screen and (min-width: 1025px) {
+  .posted {
+    width: 90%;
+  }
+}
+.posted__title {
+  margin: 30px 0px;
+}
+.posted__title h2 {
+  margin-bottom: 30px;
+}
+.posted__quote {
+  margin-bottom: 30px;
+  padding: 50px;
+}
+.posted__quote p {
+  box-sizing: border-box;
+  padding-bottom: 50px;
+}
+.posted__quote cite {
+  box-sizing: border-box;
+  font-style: normal;
+}
+.posted__quote cite a {
+  color: #4A6C9B;
+  text-decoration: underline;
+}
+.posted__single img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: bottom;
+}
+@media screen and (min-width: 600px) {
+  .posted__single img {
+    height: 280px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .posted__single img {
+    height: 350px;
+  }
+}
+.posted .c-two__column li {
+  margin-bottom: 40px;
+}
+.posted .c-two__column li .image {
+  width: 45%;
+}
+.posted .c-two__column li .text {
+  width: 55%;
+}
+.posted .c-two__column li:nth-child(even) .text {
+  padding-right: 10px;
+}
+.posted .c-two__column li:nth-child(odd) .text {
+  padding-left: 10px;
+}
+.posted__half {
+  width: 80%;
+  margin: 0 auto 40px auto;
+}
+.posted .c-tile__list {
+  margin: 10px 0 10px 0;
+}
+@media screen and (min-width: 600px) {
+  .posted .c-tile__list {
+    width: calc((100% - 20px) / 2);
+  }
+  .posted .c-tile__list:nth-child(2n) {
+    margin: 0 10px 0 10px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .posted .c-tile__list {
+    width: calc((100% - 20px) / 3);
+  }
+  .posted .c-tile__list:nth-child(2n) {
+    margin: 0;
+  }
+  .posted .c-tile__list:nth-child(3n+2) {
+    margin: 0 10px 0 10px;
+  }
+}
+
+blockquote {
+  background-color: #F5F5F5;
+}
+
+img {
+  width: 100%;
+}
+
+ol {
+  counter-reset: li;
+  /* olのリストの数字をリセット */
+}
+ol > li:before {
+  counter-increment: li;
+  /* リストの数字を1つ進める */
+  content: counter(li) ".";
+  /* リストを連番にする */
+  margin-right: 1rem;
+  /* 要素が重なるから右へ移動 */
+  line-height: 1.6;
+  /* 文字が重なるのを防止 */
 }

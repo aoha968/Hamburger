@@ -29,6 +29,20 @@
 .l-visual.-achive {
     @include background("archive-bg");
     background-size: cover;
-    background-position: 10%;
+    background-position: 50% 50%;
     background-size: auto;
+}
+
+.l-visual.-single {
+    @include background("single-bg");
+    background-size: cover;
+    background-position: 50% 50%;
+    h1 {
+        position: absolute;
+        top: 40%;
+        left: 5%;
+        color: #fff;
+        font-size: 4.5rem;
+        font-weight: bold;
+    }
 }

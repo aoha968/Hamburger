@@ -1,0 +1,29 @@
+
+.c-two__column {
+    max-width: 100%;
+    li {
+        display: flex;
+        align-items: center;
+/*      必要に応じて使用側で設定
+        margin-bottom: ○○px;
+        .image {
+            width: ○○%;
+        }
+        .text {
+            width: ○○%;
+        }
+*/
+        /* 奇数の行に対して指定 */
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+/*      必要に応じて使用側で設定
+        &:nth-child(even) .text {
+            padding-right: ○○px;
+        }
+        &:nth-child(odd) .text {
+            padding-left: ○○px;
+        }
+*/
+    }
+}
