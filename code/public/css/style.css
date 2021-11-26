@@ -260,19 +260,6 @@ button, input, form {
   }
 }
 
-.l-mainvisual__wrapper.-shop {
-  background: url("../../img/page-title_shop.jpg") no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-@media screen and (min-width: 600px) {
-  .l-mainvisual__wrapper.-shop {
-    background: url("../../img/page-title_shop@2x.jpg") no-repeat;
-    background-size: cover;
-    background-position: center center;
-  }
-}
-
 @media screen and (min-width: 1025px) {
   .l-main {
     display: flex;
@@ -316,6 +303,20 @@ button, input, form {
   background-position: 50% 50%;
 }
 .l-visual.-single h1 {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  color: #fff;
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+.l-visual.-page {
+  background: url("../../img/page-title_shop@2x.jpg") no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.l-visual.-page h1 {
   position: absolute;
   top: 40%;
   left: 5%;

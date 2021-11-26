@@ -32,15 +32,3 @@
         background-position: center center;
     }
 }
-
-.l-mainvisual__wrapper.-shop {
-    @include background("shop-bg-tab");
-    background-size: cover;
-    background-position: center center;
-
-    @include mq('tab') {
-        @include background("shop-bg-pc");
-        background-size: cover;
-        background-position: center center;
-    }
-}

@@ -33,8 +33,28 @@
     background-size: auto;
 }
 
+// -----------------------------------------------------------------
+// single
+// -----------------------------------------------------------------
 .l-visual.-single {
     @include background("single-bg");
+    background-size: cover;
+    background-position: 50% 50%;
+    h1 {
+        position: absolute;
+        top: 40%;
+        left: 5%;
+        color: #fff;
+        font-size: 4.5rem;
+        font-weight: bold;
+    }
+}
+
+// -----------------------------------------------------------------
+// page
+// -----------------------------------------------------------------
+.l-visual.-page {
+    @include background("shop-bg");
     background-size: cover;
     background-position: 50% 50%;
     h1 {
