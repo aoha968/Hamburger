@@ -3,7 +3,6 @@
 
 .l-visual {
     width: 100%;
-    height: 285px;
     position: relative;
     h2 {
         color: #fff;
@@ -26,20 +25,43 @@
 // -----------------------------------------------------------------
 // achive
 // -----------------------------------------------------------------
-.l-visual.-achive {
-    @include background("archive-bg");
+.l-visual.-archive {
+    height: 500px;
+    @include background("archive-bg-sp");
     background-size: cover;
-    background-position: 50% 50%;
-    background-size: auto;
+    position: relative;
+    @include mq('tab') {
+        height: 285px;
+        @include background("archive-bg-pc");
+        background-size: cover;
+        background-position: center center;
+    }
+    @include mq('pc') {
+        height: 285px;
+        @include background("archive-bg-pc");
+        background-size: cover;
+        background-position: center center;
+    }
 }
 
 // -----------------------------------------------------------------
 // single
 // -----------------------------------------------------------------
 .l-visual.-single {
-    @include background("single-bg");
+    height: 285px;
+    @include background("single-bg-sp");
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: center center;
+    @include mq('tab') {
+        height: 500px;
+        @include background("single-bg-pc");
+        background-position: 60% 50%;
+    }
+    @include mq('pc') {
+        height: 500px;
+        @include background("single-bg-pc");
+        background-position: center center;
+    }
     h1 {
         position: absolute;
         top: 40%;
@@ -54,9 +76,20 @@
 // page
 // -----------------------------------------------------------------
 .l-visual.-page {
-    @include background("shop-bg");
+    height: 285px;
+    @include background("shop-bg-sp");
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: center center;
+    @include mq('tab') {
+        height: 500px;
+        @include background("shop-bg-pc");
+        background-position: center center;
+    }
+    @include mq('pc') {
+        height: 500px;
+        @include background("shop-bg-pc");
+        background-position: center center;
+    }
     h1 {
         position: absolute;
         top: 40%;
