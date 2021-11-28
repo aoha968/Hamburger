@@ -192,6 +192,7 @@ button, input, form {
     position: static;
     height: auto;
     right: 0;
+    overflow-y: visible;
   }
 }
 .l-sidebar h2 {
