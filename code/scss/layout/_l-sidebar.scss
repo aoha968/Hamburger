@@ -1,5 +1,5 @@
 @use '../foundation/_variable' as *;
-@use '../object/Utility/_mixin' as *;
+@use '../foundation/_mixin' as *;
 
 .l-sidebar__bg {
     /*  グレー背景 + サイドバーが表示時は
@@ -51,7 +51,7 @@
     }
     h3 {
         font-size: 2.5rem;
-        padding: 30px 40px 0px 35px;
+        padding: 30px 0px 0px 35px;
     }
     li{
         font-size: 1.8rem;

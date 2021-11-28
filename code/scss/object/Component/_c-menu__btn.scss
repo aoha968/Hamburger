@@ -1,13 +1,13 @@
 @use '../../foundation/_variable' as *;
-@use '../../object/Utility/_mixin' as *;
+@use '../../foundation/_mixin' as *;
 
 .c-menu__btn {
     position: absolute;
     display: block;
     width: 40px;
     height: 40px;
-    top: 12px;
-    right: 24px;
+    top: 0;
+    right: 0;
     font-size: 0;
     margin-left: auto;
     border: none;
