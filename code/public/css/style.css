@@ -590,10 +590,27 @@ button, input, form {
   box-sizing: border-box;
 }
 
-.c-two__column {
+.c-column.-single img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: bottom;
+}
+@media screen and (min-width: 600px) {
+  .c-column.-single img {
+    height: 280px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .c-column.-single img {
+    height: 350px;
+  }
+}
+
+.c-column.-two {
   max-width: 100%;
 }
-.c-two__column li {
+.c-column.-two li {
   display: flex;
   align-items: center;
   /*      必要に応じて使用側で設定
@@ -615,8 +632,13 @@ button, input, form {
           }
   */
 }
-.c-two__column li:nth-child(even) {
+.c-column.-two li:nth-child(even) {
   flex-direction: row-reverse;
+}
+
+.c-column.-half {
+  width: 80%;
+  margin: 0 auto 40px auto;
 }
 
 .c-visual__layer {
@@ -859,40 +881,20 @@ button, input, form {
 .posted .c-backquote p {
   padding-bottom: 50px;
 }
-.posted__single img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  object-position: bottom;
-}
-@media screen and (min-width: 600px) {
-  .posted__single img {
-    height: 280px;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .posted__single img {
-    height: 350px;
-  }
-}
-.posted .c-two__column li {
+.posted .c-column li {
   margin-bottom: 40px;
 }
-.posted .c-two__column li .image {
+.posted .c-column li .image {
   width: 45%;
 }
-.posted .c-two__column li .text {
+.posted .c-column li .text {
   width: 55%;
 }
-.posted .c-two__column li:nth-child(even) .text {
+.posted .c-column li:nth-child(even) .text {
   padding-right: 10px;
 }
-.posted .c-two__column li:nth-child(odd) .text {
+.posted .c-column li:nth-child(odd) .text {
   padding-left: 10px;
-}
-.posted__half {
-  width: 80%;
-  margin: 0 auto 40px auto;
 }
 .posted .c-tile__list {
   margin: 10px 0 10px 0;
