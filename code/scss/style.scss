@@ -9,12 +9,12 @@
 // Layout
 // ==========================================================================
 
-@use './layout/_l-header' as *;
-@use './layout/_l-footer' as *;
-@use './layout/_l-sidebar' as *;
-@use './layout/_l-mainvisual' as *;
-@use './layout/_l-main' as *;
-@use './layout/_l-visual' as *;
+@use './layout/_header' as *;
+@use './layout/_footer' as *;
+@use './layout/_sidebar' as *;
+@use './layout/_mainvisual' as *;
+@use './layout/_main' as *;
+@use './layout/_visual' as *;
 
 // ==========================================================================
 // Object
@@ -24,24 +24,24 @@
 // Component
 // -----------------------------------------------------------------
 
-@use './object/Component/c-backquote' as *;
-@use './object/Component/c-code' as *;
-@use './object/Component/_c-header__form' as *;
-@use './object/Component/_c-menu__btn' as *;
-@use './object/Component/c-list' as *;
-@use './object/Component/_c-pagenation' as *;
-@use './object/Component/c-table' as *;
-@use './object/Component/c-tile' as *;
-@use './object/Component/c-two__column' as *;
-@use './object/Component/_c-visual__layer' as *;
+@use './object/Component/_backquote' as *;
+@use './object/Component/_code' as *;
+@use './object/Component/_header__form' as *;
+@use './object/Component/_menu__btn' as *;
+@use './object/Component/_list' as *;
+@use './object/Component/_pagenation' as *;
+@use './object/Component/_table' as *;
+@use './object/Component/_tile' as *;
+@use './object/Component/_two__column' as *;
+@use './object/Component/_visual__layer' as *;
 
 // -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------
 
-@use './object/Project/_p-card' as *;
-@use './object/Project/_p-access' as *;
-@use './object/Project/_p-posted' as *;
+@use './object/Project/_card' as *;
+@use './object/Project/_access' as *;
+@use './object/Project/_posted' as *;
 
 // -----------------------------------------------------------------
 // Utility
