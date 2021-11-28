@@ -12,7 +12,6 @@
 @use './layout/_header' as *;
 @use './layout/_footer' as *;
 @use './layout/_sidebar' as *;
-@use './layout/_mainvisual' as *;
 @use './layout/_main' as *;
 @use './layout/_visual' as *;
 
@@ -33,7 +32,6 @@
 @use './object/Component/_table' as *;
 @use './object/Component/_tile' as *;
 @use './object/Component/_column' as *;
-@use './object/Component/_visual__layer' as *;
 
 // -----------------------------------------------------------------
 // Project

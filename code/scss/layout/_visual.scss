@@ -23,6 +23,30 @@
 }
 
 // -----------------------------------------------------------------
+// front
+// -----------------------------------------------------------------
+.l-visual.-front {
+    display: flex;
+    align-items: center;
+    height: 285px;
+    padding-left: 25px;
+    margin-bottom: 30px;
+    @include background("main-bg-tab");
+    background-size: cover;
+    background-position: center center;
+
+    @include mq('tab') {
+        @include background("main-bg-pc");
+        background-size: cover;
+        background-position: center center;
+        margin-bottom: 40px;
+    }
+    @include mq('pc') {
+        height: 530px;
+    }
+}
+
+// -----------------------------------------------------------------
 // achive
 // -----------------------------------------------------------------
 .l-visual.-archive {
@@ -98,4 +122,13 @@
         font-size: 4.5rem;
         font-weight: bold;
     }
+}
+
+.l-visual.-layer {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
 }

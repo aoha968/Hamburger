@@ -223,43 +223,6 @@ button, input, form {
   transition: right 0.6s;
 }
 
-.l-mainvisual__wrapper {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 285px;
-  padding-left: 25px;
-  margin-bottom: 30px;
-}
-@media screen and (min-width: 600px) {
-  .l-mainvisual__wrapper {
-    margin-bottom: 40px;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .l-mainvisual__wrapper {
-    height: 530px;
-  }
-}
-.l-mainvisual__wrapper h2 {
-  color: #fff;
-  font-size: 5rem;
-  font-weight: bold;
-}
-
-.l-mainvisual__wrapper.-front {
-  background: url("../../img/mainvisual-sp@2x.jpg") no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-@media screen and (min-width: 600px) {
-  .l-mainvisual__wrapper.-front {
-    background: url("../../img/mainvisual-pc@2x.jpg") no-repeat;
-    background-size: cover;
-    background-position: center center;
-  }
-}
-
 @media screen and (min-width: 1025px) {
   .l-main {
     display: flex;
@@ -287,6 +250,30 @@ button, input, form {
 .l-visual__title span {
   font-size: 15px;
   vertical-align: top;
+}
+
+.l-visual.-front {
+  display: flex;
+  align-items: center;
+  height: 285px;
+  padding-left: 25px;
+  margin-bottom: 30px;
+  background: url("../../img/mainvisual-sp@2x.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+@media screen and (min-width: 600px) {
+  .l-visual.-front {
+    background: url("../../img/mainvisual-pc@2x.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .l-visual.-front {
+    height: 530px;
+  }
 }
 
 .l-visual.-archive {
@@ -368,6 +355,15 @@ button, input, form {
   color: #fff;
   font-size: 4.5rem;
   font-weight: bold;
+}
+
+.l-visual.-layer {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .c-backquote {
@@ -639,15 +635,6 @@ button, input, form {
 .c-column.-half {
   width: 80%;
   margin: 0 auto 40px auto;
-}
-
-.c-visual__layer {
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .p-card {
